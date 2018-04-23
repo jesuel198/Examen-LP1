@@ -94,3 +94,7 @@ li button:active{
     background-color: lightgray;
     box-shadow: inset 0px 0px 10px rgba( 150, 150, 150, 0.74);
 }
+#homex, #sales{
+    transition: all .4s ease;
+    border-radius: 5px;
+}
