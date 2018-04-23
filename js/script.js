@@ -14,13 +14,12 @@ function add(){
     
     var fil = document.createElement("tr");
     fil.innerHTML = fila;
-    
-    if(evaluarRepetidos(producto, tabla, cantidad)){
-        if(!producto == "" && !cantidad<=0){
-            tabla.appendChild(fil);
-        } else{
-            alert("¡Llene los datos!");
+    if(!producto == "" && !cantidad<=0){
+        if(evaluarRepetidos(producto, tabla, cantidad)){
+                tabla.appendChild(fil);
         }
+    } else{
+        alert("¡Llene los datos!");
     }
     subtotal2.value = calcularSubtotal2(tabla).toFixed(2);
     igv.value = calcularIGV(tabla).toFixed(2);
