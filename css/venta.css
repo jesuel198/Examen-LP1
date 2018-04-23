@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: lightblue;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: inset 0px 0px 10px rgba( 150, 150, 150, 0.74);
+}
+body{
+    background: #dddddd;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.form{
+    width: 46%;
+    display: flex;
+    justify-content: space-around;
+    min-width: 600px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.inputtext{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    height: 30px;
+    font-size: 24px;
+}
+.select{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.add{
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 18px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.add:hover{
+    transform: scale(1.05);
+}
+.add:active{
+    transform: scale(0.98);
+}
+#data {
+    float: left;
+    width: 700px;
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    font-size: 32px;
+    border-radius: 5px;
+    border-collapse: separate;
+}
+
+th {
+    vertical-align: top;
+    text-align: center;
+    color: black;
+    background-color: cadetblue;
+    color: white;
+    font-size: 24px;
+}
+
+td {
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+tr:nth-child(even){
+    background-color: #b2b2b2;
+}
+
+tr{
+    background-color: #cfcece;
+    transition: all .5s ease;
+}
+
+tr:hover{
+    background-color: #22a1a4;
+}
+
+.tres{
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all .5s ease;
+}
+
+.caja label{
+    font-size: 24px;
+}
+.caja input{
+    height: 30px;
+    width: 150px;
+    font-size: 24px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 5px;
+    border: 2px solid cadetblue;
+}

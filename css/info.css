@@ -1,0 +1,105 @@
+body{
+    background: #dddddd;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: century gothic;
+}
+.primero{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.info{
+    min-width: 400px;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+.image{
+    min-width: 400px;
+    width: 50%;
+    max-width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.image .container{
+    display: block;
+    width: 500px;
+    height: 334px;
+    background-image: url(../img/img%20grande.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: lightblue;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: inset 0px 0px 10px rgba( 150, 150, 150, 0.74);
+}
+.footer{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.footer .imgpeq{
+    width: 300px;
+    height: 190px;
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+    transition: all .2s ease;
+    margin: 10px;
+}
+.footer .imgpeq:hover{
+    transform: scale(1.05);
+}
+.footer .imgpeq:active{
+    transform: scale(0.98);
+}
+.uno{
+    background-image: url(../img/uno.jpg);
+}
+.dos{
+    background-image: url(../img/dos.jpg);
+}
+.tres{
+    background-image: url(../img/tres.jpeg);
+}
+
+.subfooter{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    columns: 3;
+    margin-bottom: 30px;
+    text-align: justify;
+}

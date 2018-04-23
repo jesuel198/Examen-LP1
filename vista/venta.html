@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/venta.css">
+</head>
+<body>
+    <script src="../js/script.js"></script>
+    <div class="form">
+        <div class="contenedor">
+            <label>Producto</label>
+            <select name="select" id="select" class="select">
+                <option value="" selected disabled hidden id="blank"></option>
+                <option value="Carpa">Carpa</option>
+                <option value="Sleeping">Sleeping</option>
+                <option value="Cantimplora">Cantimplora</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label>Cantidad</label>
+            <input type="number" class="inputtext" min="1" decimals="0" id="cant">
+        </div>
+        <div class="contenedor">
+            <button class="add" onclick="add();">Add</button>
+        </div>
+    </div>
+    <table id="data">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th><img src="../img/garbage.png"></th>
+            </tr>
+        </thead>
+    </table>
+    <div class="tres">
+        <div class="caja">
+            <label>Subtotal</label>
+            <input type="text" disabled id="sub2">
+            <label>IGV</label>
+            <input type="text" disabled id="igv">
+            <label>Total</label>
+            <input type="text" disabled id="tot">
+            
+        </div>
+    </div>
+</body>
+</html>
